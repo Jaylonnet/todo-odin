@@ -7,7 +7,7 @@ module.exports = {
         app: './src/app.js',
         dom: './src/dom.js',
         storage: './src/storage.js',
-        toDo: './src/tasks.js',
+        tasks: './src/tasks.js',
     },
     devtool: 'inline-source-map',
     plugins: [
