@@ -1,1 +1,77 @@
-<head><script defer src="app.bundle.js"></script><script defer src="dom.bundle.js"></script><script defer src="storage.bundle.js"></script><script defer src="toDo.bundle.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+<script defer src="app.bundle.js"></script><script defer src="dom.bundle.js"></script><script defer src="storage.bundle.js"></script><script defer src="tasks.bundle.js"></script></head>
+
+<body>
+    <div id="logo">TODO</div>
+
+    <main>
+        <section id="projects">
+            <form action="#" id="create-project-form">
+                <legend>Create a new project...</legend>
+                <div><input type="text" id="new-project-title" placeholder="Project Title"></div>
+                <button type="button" id="create-project-btn">Create Project</button>
+            </form>
+        </section>
+        <section id="tasks">
+            <form action="#" id="create-task-form">
+                <legend>Create a new task...</legend>
+                <div>
+                    <input type="text" placeholder="Title" id="new-task-title">
+                </div>
+                <div>
+                    <input type="text" placeholder="dd/mm/yyyy" id="new-task-due-date">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Priority:</legend>
+
+                        <div>
+                            <input type="radio" id="high" name="priority" value="high" checked>
+                            <label for="high">High</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="medium" name="priority" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="low" name="priority" value="low">
+                            <label for="low">Low</label>
+                        </div>
+                    </fieldset>
+                    <button type="button" id="create-task-btn">Create Task</button>
+                </div>
+            </form>
+            <ul>
+                <li>Random task</li>
+                <li>Demo Task</li>
+                <li>Task 3</li>
+                <li>Task 4</li>
+                <li>Task 5</li>
+                <li>Task 6</li>
+            </ul>
+            <div>
+                <span>5 items left</span>
+                <span id="display-options">
+                    <ul>
+                        <li>All</li>
+                        <li>Active</li>
+                        <li>Completed</li>
+                    </ul>
+                </span>
+                <span>Clear Completed</span>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
