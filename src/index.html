@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,12 +21,15 @@
                 <div><input type="text" id="new-project-title" placeholder="Project Title"></div>
                 <button type="button" id="create-project-btn">Create Project</button>
             </form>
+            <div id="project-list">
+
+            </div>
         </section>
         <section id="tasks">
             <form action="#" id="create-task-form">
                 <legend>Create a new task...</legend>
                 <div>
-                    <input type="text" placeholder="Title" id="new-task-title">
+                    <input type="text" placeholder="Task Title" id="new-task-title">
                 </div>
                 <div>
                     <input type="text" placeholder="dd/mm/yyyy" id="new-task-due-date">
@@ -49,14 +55,21 @@
                     </fieldset>
                     <button type="button" id="create-task-btn">Create Task</button>
                 </div>
+                <div id="task-list">
+
+                </div>
             </form>
             <ul>
-                <li>Random task</li>
-                <li>Demo Task</li>
-                <li>Task 3</li>
-                <li>Task 4</li>
-                <li>Task 5</li>
-                <li>Task 6</li>
+                <li><i class="fa-solid fa-square-check"></i>Random task <span id="options"><i
+                            class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></span></li>
+                <li><i class="fa-solid fa-square-x"></i>Random task <span id="options"><i
+                            class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash-can"></i></span></li>
+                <li>Random task <span id="options"><i class="fa-solid fa-pen-to-square"></i><i
+                            class="fa-solid fa-trash-can"></i></span></li>
+                <li>Random task <span id="options"><i class="fa-solid fa-pen-to-square"></i><i
+                            class="fa-solid fa-trash-can"></i></span></li>
+                <li>Random task <span id="options"><i class="fa-solid fa-pen-to-square"></i><i
+                            class="fa-solid fa-trash-can"></i></span></li>
             </ul>
             <div>
                 <span>5 items left</span>
